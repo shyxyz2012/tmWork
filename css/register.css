@@ -1,0 +1,197 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    height: 100%;
+}
+/*注册页面导航部分开始*/
+#register-nav{
+    width: 75%;
+    margin: 0 auto;
+    height: 50px;
+    border-bottom: 2px solid #E6E6E6;
+}
+#register-nav ul{
+    width: 720px;
+    margin: 0 auto;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#register-nav li{
+    float: left;
+    text-align: center;
+}
+#register-nav li span{
+    width: 180px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: #999;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    margin: 0 0 0 -40px;
+    float: left;
+    font-weight: bold;
+}
+#register-nav li:nth-child(1) > b{
+    background: red;
+}
+#register-nav li:nth-child(1) > span{
+    border-bottom: 2px solid red;
+}
+#register-nav li b{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ccc;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    display: block;
+    margin-top: 10px;
+    float: left;
+}
+/*注册页面导航部分结束*/
+
+/*注册页面表单部分开始*/
+#register-form{
+    width: 75%;
+    margin: 0 auto;
+}
+.register-phone{
+    width: 720px;
+    height: 60px;
+    /*border: 1px solid black;*/
+    margin: 100px auto;
+    line-height: 60px;
+}
+.many-play{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 165px;
+    height: 40px;
+    border:  1px  solid #ccc;
+    font-weight: bold;
+    cursor: pointer;
+}
+.register-phone > input{
+    width: 160px;
+    height: 38px;
+    margin-top: 10px;
+    float: left;
+    font-size: 14px;
+    color: gray;
+}
+.play-hide{
+    width: 165px;
+    height: 300px;
+    border: 1px solid gray;
+    overflow: scroll;
+    font-size: 12px;
+    position: relative;
+    left: 20px;
+    display: none;
+    background: white;
+}
+.play-hide li{
+    list-style: none;
+    height: 30px;
+    border: 1px solid white;
+    width: 160px;
+}
+.play-hide a{
+    text-decoration: none;
+    color: black;
+    margin: -15px 0 0 15px;
+    display: block;
+}
+.play-hide li.active{
+    background: #FA5512;
+}
+.play-hide li:hover{
+    background: #FA5512;
+}
+.play-hide li:hover > a{
+    color: white;
+}
+.play-hide li.active > a{
+    color: white;
+}
+.many-play p{
+    margin-top: -10px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+.register-phone > span{
+    float: left;
+    margin-left: 180px;
+}
+.many-play b{
+    font-family: iconfont;
+    font-size: 14px;
+    color: gray;
+}
+.many-play span{
+    float: right;
+    margin-right: 10px;
+}
+.sure-code{
+    width: 720px;
+    height: 60px;
+    margin: -90px auto;
+    line-height: 60px;
+}
+.sure-code input:nth-child(2){
+    width: 165px;
+    height: 40px;
+    margin-left: 18px;
+}
+.sure-code input:nth-child(3){
+    font-size: 12px;
+    width: 65px;
+    height: 42px;
+    margin-top: -2px;
+    position: relative;
+}
+.sure-code ins{
+    margin-left: 195px;
+    text-decoration: none;
+}
+.next{
+    width: 180px;
+    height: 36px;
+    background: #EDEDED;
+    margin: 100px auto;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#register-form .question{
+    float: right;
+    width: 60px;
+    height: 90px;
+    border: 1px solid #F5F5F5;
+    color: #D0BEBE;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px 100px 0 0;
+}
+#register-form .question > div{
+    font-family: iconfont;
+    color: #F7931E;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#register-form .question:hover{
+    border: 1px solid #F7931E;
+    color: #F7931E;
+}
+/*注册页面表单部分结束*/

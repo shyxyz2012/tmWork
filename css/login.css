@@ -1,0 +1,204 @@
+/*登录页面logo部分开始*/
+header{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+header img{
+    width: 190px;
+    height: 27px;
+}
+/*登录页面logo部分结束*/
+
+/*登录页面中间内容部分开始*/
+article{
+    width: 100%;
+    height: 600px;
+    background: #E5C592;
+    position: relative;
+}
+article > img{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+article .divFirst,article .divTwo{
+    width: 350px;
+    height: 404px;
+    background: #fff;
+    position: absolute;
+    right: 135px;
+    bottom: 100px;
+}
+article .divFirst{
+    display: none;
+}
+article .divFirst > img,article .divTwo > img{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+article .shao-login{
+    width: 135px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #DF9C1F;
+    font-size: 12px;
+    border: 1px solid #DF9C1F;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+article .shao-login b{
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #DF9C1F;
+    border-right: 1px solid #DF9C1F;
+    transform: rotateZ(45deg);
+    position: absolute;
+    right: -5px;
+    top: 8px;
+    background: #FFFFFF;
+}
+.shao-login span{
+    font-family: iconfont;
+    color: #DF9C1F;
+    font-size: 20px;
+}
+.login-form{
+    width: 292px;
+    height: 272px;
+    position: absolute;
+    margin: 40px 30px;
+}
+.login-form .inp{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #CBCBCB;
+}
+.login-form .inp input{
+    float: left;
+    margin: 14px 5px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+}
+.login-form button{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #FF335E;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: "微软雅黑";
+    border: none;
+}
+.login-form > img{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.divTwo > img{
+    margin: 10px;
+}
+.openLogin{
+    width: 190px;
+    height: 70px;
+    margin: 20px 0 0 50px;
+}
+.openLogin img{
+    float: left;
+    margin-top: 5px;
+    width: 34px;
+    height: 36px;
+    margin-right: 10px;
+}
+.openLogin span{
+    font-size: 12px;
+    color: gray;
+}
+.openLogin a{
+    font-size: 12px;
+    color: red;
+    text-decoration: none;
+}
+.pswLogin{
+    width: 110px;
+    height: 30px;
+    float: right;
+    margin-top: -10px;
+}
+.pswLogin a{
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+}
+.pswLogin a:hover{
+    color: red;
+}
+.inp label{
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    font-family: iconfont;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    font-size: 30px;
+    color: #606060;
+}
+.psw{
+    float: right;
+    margin-top: 20px;
+}
+.psw a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #6C6C6C;
+    padding: 20px 10px 0 0;
+}
+.psw a:hover{
+    color:#FF335E;
+}
+/*登录页面中间内容部分结束*/
+
+/*登录页面底部内容部分开始*/
+footer{
+    width: 90%;
+    margin: 20px auto;
+}
+footer p a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 0 0 0 5px;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+footer .bottom{
+    color: #666666;
+    font-size: 12px;
+}
+footer .bottom a{
+    text-decoration: none;
+    color: #999;
+    padding: 0 50px 0 0;
+}
+footer .bottom a > img{
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+footer .bottom a:hover{
+    text-decoration: underline;
+}
+/*登录页面底部内容部分结束*/

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>productDetail</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_501811_u8htfcrtax8estt9.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_501811_yiklb6ipkokzkt9.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_501811_yf6y8br1usb81tt9.css">
+    <link rel="stylesheet" href="../css/iconfontD.css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/detail.js"></script>
+</head>
+<body>
+    <!--右边固定导航栏部分开始-->
+    <div id="right-aside">
+        <div class="aside-up">
+            <div class="up-one">
+                <img src="../img/many.png">
+                <div class="hidde">
+                    会员权益
+                </div>
+            </div>
+
+            <div class="up-two">
+                <img src="../img/detailImg/dshopcar.png">
+                <b>购物车</b>
+            </div>
+            <div class="up-three">
+                <img src="../img/mony.png">
+                <div class="hidde">
+                    我的资产
+                </div>
+            </div>
+            <div class="up-four">
+                <img src="../img/wujiao.png">
+                <div class="hidde">
+                    我的收藏
+                </div>
+            </div>
+            <div class="up-five">
+                <img src="../img/look.png">
+                <div class="hidde">
+                    我看过的
+                </div>
+            </div>
+            <div class="up-six">
+                <img src="../img/fangxing.png">
+                <div class="hidde">
+                    我要充值
+                </div>
+            </div>
+        </div>
+
+        <div class="aside-down">
+            <div class="down-one">
+                <img src="../img/bianji.png">
+                <div class="hidde">
+                    用户反馈
+                </div>
+            </div>
+            <div class="down-two">
+                <img src="../img/erma.png">
+            </div>
+            <div class="down-three">
+                <a href="#header"><img src="../img/dingbu.png"></a>
+                <div class="hidde">
+                    返回顶部
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右边固定导航栏部分结束-->
+
+    <!--产品详情页头部开始-->
+    <div id="header">
+        <img src="../img/detailImg/fImg.jpg">
+    </div>
+    <!--产品详情页头部结束-->
+
+    <!--产品详情页导航部分开始-->
+    <div id="nav">
+        <div class="nav-down">
+            <div class="nav-left">
+                <b>&#xe60d;</b>
+                <a href="">天猫首页</a>
+                <span>喵，欢迎来天猫</span>
+                <a href="login.html" target="_self">请登录</a>
+                <a href="register.html" target="_self">免费注册</a>
+            </div>
+
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="">我的淘宝</a><ins>&#xe60c;</ins>
+                        <div>
+                            <a href="">已买到的宝贝</a>
+                            <br><a href="">已卖出的宝贝</a>
+                        </div>
+                    </li>
+                    <li>
+                        <b>&#xe605;</b>
+                        <a href="" id="SHOPCAR">购物车0件</a>
+                    </li>
+                    <li>
+                        <a href="">收藏夹</a><ins>&#xe60c;</ins>
+                        <div>
+                        <a href="">收藏的店铺</a>
+                        <br><a href="">收藏的宝贝</a>
+                        </div>
+                    </li>
+                    <li>
+                        <b>&#xe627;</b>
+                        <a href="">手机版</a>
+                        <!--<div class="ig">-->
+                        <!--<img src="img/header_weima.png">-->
+                        <!--</div>-->
+                    </li>
+                    <li><a href="">淘宝网</a></li>
+                    <li>
+                        <a href="">商家支持</a><ins>&#xe60c;</ins>
+                        <div class="support">
+                        <p>商家：</p>
+                            <ul>
+                                <li><a href="">商家中心</a></li>
+                                <li><a href="">天猫规则</a></li>
+                                <li><a href="">商家入驻</a></li>
+                                <li><a href="">运营服务</a></li>
+                                <li><a href="">商家品控</a></li>
+                                <li><a href="">商家工具</a></li>
+                                <li><a href="">天猫智库</a></li>
+                                <li><a href="">喵言喵语</a></li>
+                                </ul>
+                                <p>帮助：</p>
+                                <ul>
+                                <li><a href="">帮助中心</a></li>
+                                <li><a href="">问商友</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <b>&#xe6a2;</b>
+                        <a href="">网站导航</a><ins>&#xe60c;</ins>
+                        <div class="wifi">
+                        <p class="p1">热点推荐HOT</p>
+                        <ul class="hot">
+                            <li><a href="">天猫超市</a></li>
+                            <li><a href="">喵鲜生</a></li>
+                            <li><a href="">科技新品</a></li>
+                            <li><a href="">女装新品</a></li>
+                            <li><a href="">酷玩街</a></li>
+                            <li><a href="">内衣新品</a></li>
+                            <li><a href="">试美妆</a></li>
+                            <li><a href="">运动新品</a></li>
+                            <li><a href="">时尚先生</a></li>
+                            <li><a href="">精明妈咪</a></li>
+                            <li><a href="">吃乐会</a></li>
+                            <li><a href="">企业采购</a></li>
+                            <li><a href="">会员积分</a></li>
+                            <li><a href="">天猫国际</a></li>
+                            <li><a href="">品质频道</a></li>
+                        </ul>
+                        <p class="p2">行业市场Market</p>
+                        <ul class="market">
+                            <li><a href="">美妆</a></li>
+                            <li><a href="">电器</a></li>
+                            <li><a href="">女装</a></li>
+                            <li><a href="">男装</a></li>
+                            <li><a href="">女鞋</a></li>
+                            <li><a href="">男鞋</a></li>
+                            <li><a href="">内衣</a></li>
+                            <li><a href="">箱包</a></li>
+                            <li><a href="">运动</a></li>
+                            <li><a href="">母婴</a></li>
+                            <li><a href="">家装</a></li>
+                            <li><a href="">医药</a></li>
+                            <li><a href="">食品</a></li>
+                            <li><a href="">配饰</a></li>
+                            <li><a href="">汽车</a></li>
+                        </ul>
+                        <p class="p3">服务指南Help</p>
+                        <ul class="help">
+                            <li><a href="">帮助中心</a></li>
+                            <li><a href="">品质保障</a></li>
+                            <li><a href="">特色服务</a></li>
+                            <li><a href="">7天退货</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--产品详情页导航部分结束-->
+
+    <!--产品详情页搜索部分开始-->
+    <div id="d-search">
+        <img src="../img/detailImg/dtmlogo.png">
+        <div class="nanJ">
+            <span>南京</span><b>&#xe61b;</b>
+            <div class="nanJ-hide">
+                <h5>热门城市:</h5>
+                <p>
+                    <a href="">北京</a>
+                    <a href="">上海</a>
+                    <a href="">杭州</a>
+                    <a href="">广州</a>
+                    <a href="">天津</a>
+                    <a href="">苏州</a>
+                    <a href="">成都</a>
+                    <a href="">深圳</a>
+                    <a href="">南京</a>
+                    <a href="">重庆</a>
+                    <a href="">南昌</a>
+                    <a href="">武汉</a>
+                </p>
+                <p class="nTitle">
+                    <a href="" class="active">ABCDE</a>
+                    <a href="">FGHJ</a>
+                    <a href="">KLMNP</a>
+                    <a href="">QRSTW</a>
+                    <a href="">XYZ</a>
+                </p>
+                <div class="englishPlay">
+                    <div>
+                        <span>A</span>
+                        <a href="">阿贝</a>
+                        <a href="">安顺</a>
+                        <a href="">鞍山</a>
+                        <a href="">安康</a>
+                        <a href="">阿拉善</a>
+                        <a href="">安庆</a>
+                        <a href="" style="float: left">安阳</a>
+                    </div>
+                    <div>
+                        <span>B</span>
+                        <a href="">百色</a>
+                        <a href="">滨州</a>
+                        <a href="">保定</a>
+                        <a href="">蚌埠</a>
+                        <a href="">白银</a>
+                        <a href="">白沙</a>
+                        <a href="">巴中</a>
+                        <a href="">保亭</a>
+                        <a href="">包头</a>
+                        <a href="">毕节</a>
+                        <a href="">白山</a>
+                        <a href="">宝鸡</a>
+                        <a href="">宝山</a>
+                        <a href="">亳州</a>
+                        <a href="">本溪</a>
+                        <a href="">巴彦</a>
+                        <a href="">北京</a>
+                        <a href="">白城</a>
+                        <a href="" style="float: left">北海</a>
+                    </div>
+                    <div>
+                        <span>C</span>
+                        <a href="">百色</a>
+                        <a href="">滨州</a>
+                        <a href="">保定</a>
+                        <a href="">蚌埠</a>
+                        <a href="">白银</a>
+                        <a href="">白沙</a>
+                        <a href="">巴中</a>
+                        <a href="">保亭</a>
+                        <a href="">包头</a>
+                        <a href="">毕节</a>
+                        <a href="">白山</a>
+                        <a href="">宝鸡</a>
+                        <a href="">宝山</a>
+                        <a href="">亳州</a>
+                        <a href="">本溪</a>
+                        <a href="">巴彦</a>
+                        <a href="">北京</a>
+                        <a href="">白城</a>
+                        <a href=""style="float: left">白城</a>
+                        <a href="" style="float: left">北海</a>
+                    </div>
+                    <div>
+                        <span>D</span>
+                        <a href="">百色</a>
+                        <a href="">滨州</a>
+                        <a href="">保定</a>
+                        <a href="">蚌埠</a>
+                        <a href="">白银</a>
+                        <a href="">白沙</a>
+                        <a href="">巴中</a>
+                        <a href="">保亭</a>
+                        <a href="">包头</a>
+                        <a href="">毕节</a>
+                        <a href="">白山</a>
+                        <a href="">宝鸡</a>
+                        <a href="">宝山</a>
+                        <a href="">亳州</a>
+                        <a href="">本溪</a>
+                        <a href="">巴彦</a>
+                        <a href="" style="float: left">北海</a>
+                    </div>
+                    <div>
+                        <span>E</span>
+                        <a href="">恩斯</a>
+                        <a href="">鄂尔多斯</a>
+                        <a href="">鄂州</a>
+                    </div>
+                </div>
+                <div class="englishPlay">
+                    <div>
+                        <span>A</span>
+                        <a href="">阿贝</a>
+                        <a href="">安顺</a>
+                        <a href="">鞍山</a>
+                        <a href="">安康</a>
+                        <a href="">阿拉善</a>
+                        <a href="">安庆</a>
+                        <a href="" style="float: left">安阳</a>
+                    </div>
+                    <div>
+                        <span>B</span>
+                        <a href="">百色</a>
+                        <a href="">滨州</a>
+                        <a href="">保定</a>
+                        <a href="">蚌埠</a>
+                        <a href="">白银</a>
+                        <a href="">白沙</a>
+                        <a href="">巴中</a>
+                        <a href="">保亭</a>
+                        <a href="">包头</a>
+                        <a href="">毕节</a>
+                        <a href="">白山</a>
+                        <a href="">宝鸡</a>
+                        <a href="">宝山</a>
+                        <a href="">亳州</a>
+                        <a href="">本溪</a>
+                        <a href="">巴彦</a>
+                        <a href="">北京</a>
+                        <a href="">白城</a>
+                        <a href="" style="float: left">北海</a>
+                    </div>
+                    <div>
+                        <span>C</span>
+                        <a href="">百色</a>
+                        <a href="">滨州</a>
+                        <a href="">保定</a>
+                        <a href="">蚌埠</a>
+                        <a href="">白银</a>
+                        <a href="">白沙</a>
+                        <a href="">巴中</a>
+                        <a href="">保亭</a>
+                        <a href="">包头</a>
+                        <a href="">毕节</a>
+                        <a href="">白山</a>
+                        <a href="">宝鸡</a>
+                        <a href="">宝山</a>
+                        <a href="">亳州</a>
+                        <a href="">本溪</a>
+                        <a href="">巴彦</a>
+                        <a href="">北京</a>
+                        <a href="">白城</a>
+                        <a href=""style="float: left">白城</a>
+                        <a href="" style="float: left">北海</a>
+                    </div>
+                    <div>
+                        <span>D</span>
+                        <a href="">百色</a>
+                        <a href="">滨州</a>
+                        <a href="">保定</a>
+                        <a href="">蚌埠</a>
+                        <a href="">白银</a>
+                        <a href="">白沙</a>
+                        <a href="">巴中</a>
+                        <a href="">保亭</a>
+                        <a href="">包头</a>
+                        <a href="">毕节</a>
+                        <a href="">白山</a>
+                        <a href="">宝鸡</a>
+                        <a href="">宝山</a>
+                        <a href="">亳州</a>
+                        <a href="">本溪</a>
+                        <a href="">巴彦</a>
+                        <a href="" style="float: left">北海</a>
+                    </div>
+                    <div>
+                        <span>E</span>
+                        <a href="">恩斯</a>
+                        <a href="">鄂尔多斯</a>
+                        <a href="">鄂州</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchTop">
+            <input type="text" value="搜索天猫超市商品">
+            <div class="sText">搜索</div>
+        </div>
+        <div class="searchEnd">
+            <ins>1</ins>
+            <a href="">一站式购齐</a>
+            <span></span>
+            <ins>88</ins>
+            <a href="">满88包邮</a>
+            <a href="" class="last"><img src="../img/detailImg/d-zs.png"></a>
+        </div>
+    </div>
+    <!--产品详情页搜索部分结束-->
+
+    <!--产品分类部分开始-->
+    <div id="proType">
+        <div class="product">
+            <div class="proAll">
+                所有产品分类
+                <div class="proAll-son">
+                    <div>
+                        <b>&#xe734;</b>
+                        <p>
+                        <h3>进口食品</h3>
+                        <span> ›</span>
+                        </p>
+                        <p class="pro-type">
+                            <a href="">牛奶</a>
+                            <a href="">零食</a>
+                            <a href="">饼干</a>
+                            <a href="">方便面</a>
+                            <a href="">粮油</a>
+                        </p>
+                    </div>
+                    <div>
+                        <b>&#xe656;</b>
+                        <p>
+                        <h3>食品饮料</h3>
+                        <span> ›</span>
+                        </p>
+                        <p class="pro-type">
+                            <a href="">牛奶</a>
+                            <a href="">坚果</a>
+                            <a href="">饼干</a>
+                            <a href="">方便面</a>
+                            <a href="">粮油</a>
+                        </p>
+                    </div>
+                    <div>
+                        <b>&#xe61c;</b>
+                        <p>
+                        <h3>粮油副食</h3>
+                        <span> ›</span>
+                        </p>
+                        <p class="pro-type">
+                            <a href="">油</a>
+                            <a href="">大米</a>
+                            <a href="">调料</a>
+                            <a href="">方便面</a>
+                            <a href="">火腿肠</a>
+                        </p>
+                    </div>
+                    <div>
+                        <b>&#xe628;</b>
+                        <p>
+                        <h3>美容洗护</h3>
+                        <span> ›</span>
+                        </p>
+                        <p class="pro-type">
+                            <a href="">洗发</a>
+                            <a href="">沐浴</a>
+                            <a href="">牙膏</a>
+                            <a href="">洁面</a>
+                            <a href="">卫生巾</a>
+                        </p>
+                    </div>
+                    <div>
+                        <b>&#xe626;</b>
+                        <p>
+                        <h3>家居家电</h3>
+                        <span> ›</span>
+                        </p>
+                        <p class="pro-type">
+                            <a href="">毛巾</a>
+                            <a href="">家电</a>
+                            <a href="">玻璃杯</a>
+                            <a href="">衣架</a>
+                            <a href="">锅</a>
+                        </p>
+                    </div>
+                    <div>
+                        <b>&#xe618;</b>
+                        <p>
+                        <h3>家庭清洁</h3>
+                        <span> ›</span>
+                        </p>
+                        <p class="pro-type">
+                            <a href="">纸</a>
+                            <a href="">洗衣</a>
+                            <a href="">洗洁精</a>
+                            <a href="">垃圾袋</a>
+                            <a href="">洁厕</a>
+                        </p>
+                    </div>
+                    <div>
+                        <b>&#xe617;</b>
+                        <p>
+                        <h3>母婴用品</h3>
+                        <span> ›</span>
+                        </p>
+                        <p class="pro-type">
+                            <a href="">纸尿裤</a>
+                            <a href="">奶粉</a>
+                            <a href="">湿巾</a>
+                            <a href="">洗护</a>
+                            <a href="">玩具</a>
+                        </p>
+                    </div>
+                    <div>
+                        <b>&#xe62f;</b>
+                        <p>
+                        <h3>生鲜水果</h3>
+                        <span> ›</span>
+                        </p>
+                        <p class="pro-type">
+                            <a href="">水果</a>
+                            <a href="">肉类</a>
+                            <a href="">海产</a>
+                            <a href="">禽蛋</a>
+                            <a href="">蔬菜</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pro-ul">
+                <ul>
+                    <li><a href="../index.html">首页</a><span>|</span></li>
+                    <li><a href="">量贩装</a><span>|</span></li>
+                    <li><a href="">生鲜区</a><span>|</span></li>
+                    <li><a href="">企业采购</a><span>|</span></li>
+                    <li><a href="">大家电</a></li>
+                </ul>
+            </div>
+            <div class="pro-right">
+                <b>&#xe8ec;</b>
+                <a href="">我的福利</a>
+                <div class="pro-weight">
+                    <ins>￥0.00元</ins>
+                    <ins>0kg</ins>
+                    <b>&#xe60c;</b>
+                </div>
+                <span>&#xe605;</span>
+                <div class="shopNo">
+                    <p>
+                        <span>商品</span>
+                        <span>数量</span>
+                        <span>价格</span>
+                        <span>删除</span>
+                    </p>
+                    <p>
+                        如果您还未登录，可能导致购物车为空，请<a href="">马上登录</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--产品分类部分结束-->
+
+    <!--购物车详情部分开始-->
+        <div id="shopCar-detail">
+            <div class="shopCar-detail-left">
+                <div class="leftFirst">
+                    <span><a href="">天猫超市</a> > <a href="">良品铺子</a></span>
+                    <div class="dLeft-big">
+                        <b>&#xe606;</b>
+                        <div class="zoom"></div>
+                    </div>
+                    <div class="small-pho">
+                        <ul>
+                            <li><a href=""><img src="../img/detailImg/cen1.jpg" class="active"></a></li>
+                            <li><a href=""><img src="../img/detailImg/cen1.jpg"></a></li>
+                            <li><a href=""><img src="../img/detailImg/cen1.jpg"></a></li>
+                            <li><a href=""><img src="../img/detailImg/cen2.jpg"></a></li>
+                            <li><a href=""><img src="../img/detailImg/cen3.jpg"></a></li>
+                        </ul>
+                    </div>
+                    <div class="left-bottom">
+                        <a href=""><b>&#xe757;</b>分享</a>
+                        <a href=""><b>&#xe60e;</b>收藏商品</a><span>(1259人气)</span>
+                        <a href="" class="lastA">举报</a>
+                    </div>
+                </div>
+                <div class="leftSecond">
+                    <h2>良品铺子棒棒卷100g辣条零食麻辣湖南零食食品小吃</h2>
+                    <p>新老包装随机发货，敬请谅解</p>
+                    <div class="tm-panel">
+                        <div class="tmq">
+                            <img src="../img/detailImg/gwq.png"><span>全天猫实物商品通用</span>
+                        </div>
+                        <div class="gq">
+                            <a href="">去刮券</a>
+                            <b> › </b>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>价格</td>
+                                <td>
+                                    <span><ins>￥</ins>99.90</span><b>超市推荐</b>
+                                    <p>此优惠限5件，超出则该商品全部恢复非活动价</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="yf">
+                            <h4>运费</h4>
+                            <div class="tm-play">
+                                江苏南京 至 南京ˇ玄武区ˇ满88(20kg)包邮 配送规则
+                            </div>
+                            <div class="tm-time">
+                                <img src="../img/detailImg/tmcrd.png">
+                                23:00前付款，承诺12月25日送达，可选送货时间
+                            </div>
+                        </div>
+                        <div class="xiaoL">
+                            <a href="">月销量<b>25725</b></a><span>|</span>
+                            <a href="">累计评价<b>47162</b></a><span>|</span>
+                            <a href="">送天猫积分<b class="lastB">9</b></a>
+                        </div>
+                        <div class="cloth-many">
+                            <h5>数量</h5>
+                            <input type="text" id="tmInp" title="请输入购买数量" value="0">
+                            <button id="jia">&#xe607;</button>
+                            <button id="jian">&#xe61b;</button>
+                            <!--<span>件库存950件</span>-->
+                        </div>
+                        <div class="jhs">
+                            <span>您只有在聚划算页面点击“马上抢”，才可享受此商品的优惠价格，<a href="">点此进入</a> </span>
+                        </div>
+                        <div class="sRound">
+                            <span>配送范围</span>送货范围仅限常州、扬州、苏州、盐城、徐州、宿迁、淮安、泰州、无锡、连云港、南通、镇江、南京地区(生鲜类别仅限部分地区)
+                        </div>
+                        <div class="tm-pay">
+                            <span>支付方式<b>&#xe61b;</b></span>
+                            <div class="payType">
+                                <div class="pay-detail">
+                                    <a href="">信用卡</a>
+                                    <a href="">快捷支付</a>
+                                    <a href="">蚂蚁花呗</a>
+                                    <a href="">余额宝</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopCar-detail-right">
+
+            </div>
+        </div>
+    <!--购物车详情部分结束-->
+
+    <!--商品详情部分开始-->
+        <div id="proDetail">
+            <div class="proDetail-left">
+                <a href=""><img src="../img/detailImg/detail1.jpg"></a>
+                <a href=""><img src="../img/detailImg/detail2.jpg"></a>
+                <a href=""><img src="../img/detailImg/detail3.jpg"></a>
+            </div>
+            <div class="proDetail-right">
+                <div class="pd-right-top">
+                    <ul>
+                        <li class="active"><a href="">商品详情</a></li>
+                        <li><a href="">累计评价</a></li>
+                        <li><a href="">售后服务</a></li>
+                    </ul>
+                </div>
+                <div class="pd-right-pho">
+                    <div class="igs">
+                        <div class="ig"><img src="../img/detailImg/dhua1.jpg"></div>
+                        <div class="ig"><img src="../img/detailImg/dhua2.jpg"></div>
+                        <div class="ig"><img src="../img/detailImg/dhua3.jpg"></div>
+                        <div class="ig"><img src="../img/detailImg/dhua4.jpg"></div>
+                        <div class="ig"><img src="../img/detailImg/dhua5.jpg"></div>
+                        <div class="ig"><img src="../img/detailImg/dhua6.jpg"></div>
+                        <div class="ig"><img src="../img/detailImg/dhua7.jpg"></div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab bg">1</div>
+                        <div class="tab">2</div>
+                        <div class="tab">3</div>
+                        <div class="tab">4</div>
+                        <div class="tab">5</div>
+                        <div class="tab">6</div>
+                        <div class="tab">7</div>
+                    </div>
+                </div>
+                <div class="bigImg">
+                    <img src="../img/detailImg/chang.jpg">
+                    <img src="../img/detailImg/chang1.jpg">
+                    <img src="../img/detailImg/chang2.jpg">
+                    <img src="../img/detailImg/chang3.jpg">
+                    <img src="../img/detailImg/chang4.jpg">
+                    <img src="../img/detailImg/chang5.jpg">
+                    <img src="../img/detailImg/chang6.jpg">
+                    <img src="../img/detailImg/chang7.jpg">
+                    <img src="../img/detailImg/chang8.jpg">
+                    <img src="../img/detailImg/chang9.jpg">
+                    <img src="../img/detailImg/chang10.jpg">
+                    <img src="../img/detailImg/chang11.jpg">
+                </div>
+            </div>
+        </div>
+    <!--商品详情部分结束-->
+
+    <!--累计评价部分开始-->
+        <div id="many-rated">
+            <div class="rated-title">
+                <span>累计评价&nbsp;1289087</span>
+            </div>
+            <div class="rated-contain">
+                <div class="rc-left">
+                    <span>与描述相符</span>
+                    <p>4.9</p>
+                    <b>
+                        <img src="../img/detailImg/xx.png">
+                        <img src="../img/detailImg/xx.png">
+                        <img src="../img/detailImg/xx.png">
+                        <img src="../img/detailImg/xx.png">
+                        <img src="../img/detailImg/xx.png">
+                    </b>
+                </div>
+                <div class="many-people">
+                    <div class="mp-title">大家都写到<img src="../img/detailImg/kuohao.png"></div>
+                    <div class="rated-type">
+                        <ul>
+                            <li><a href="">快递不错(403)</a></li>
+                            <li><a href="">划算(346)</a></li>
+                            <li><a href="">味道不错(273)</a></li>
+                            <li><a href="">质量很好(208)</a></li>
+                            <li><a href="">很好的果干(100)</a></li>
+                            <li><a href="">人群(89)</a></li>
+                            <li><a href="">不便宜(113)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rated-bottom">
+                   <div class="rb-l">
+                       <input type="radio" checked>全部
+                       <input type="radio">追评(651)
+                       <input type="radio">图片(1727)
+                   </div>
+                    <div class="rb-r">
+                        <input type="checkbox" checked>有内容
+                        <b class="moren">
+                            按默认
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--累计评价部分结束-->
+
+</body>
+</html>
+<script>
+    //数量增加和减少部分开始
+    var inp=document.getElementById('tmInp');
+    var btn1=document.getElementById('jia');
+    var btn2=document.getElementById('jian');
+    btn1.onclick=function(){
+        inp.value++;
+        if(inp.value>10){
+            alert('本商品一次只能购买十件');
+            inp.value=0;
+        }
+    }
+    btn2.onclick=function(){
+        if(inp.value>0)
+            inp.value--;
+    }
+    //数量增加和减少部分结束
+</script>

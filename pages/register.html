@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TMRegister</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_501995_fx7uid39c1wtgldi.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_501811_sa7z5tq6yqcwhfr.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/iconfont1.css">
+    <link rel="stylesheet" href="../css/iconfont2.css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <!--注册页面导航部分开始-->
+        <div id="register-nav">
+            <ul>
+                <li class="active"><b>1</b><span>设置用户名</span></li>
+                <li><b>2</b><span>填写账号信息</span></li>
+                <li><b>3</b><span>设置支付方式</span></li>
+                <li><b>4</b><span>注册成功</span></li>
+            </ul>
+        </div>
+    <!--注册页面导航部分结束-->
+
+    <!--注册页面表单部分开始-->
+        <div id="register-form">
+            <div class="register-phone">
+                <span>手机号</span>
+                <div class="many-play">
+                    <p>中国大陆<span>+86<b>&#xe61b;</b></span></p>
+                </div>
+                <input type="text" placeholder="请输入你的手机号码">
+                <div class="play-hide">
+                    <ul>
+                        <li class="active"><a href="">中国台湾地区<span>+16</span></a></li>
+                        <li><a href="">中国香港<span>+34</span></a></li>
+                        <li><a href="">马来西亚<span>+896</span></a></li>
+                        <li><a href="">新加坡<span>+11</span></a></li>
+                        <li><a href="">日本<span>+34</span></a></li>
+                        <li><a href="">韩国<span>+098</span></a></li>
+                        <li><a href="">美国<span>+101</span></a></li>
+                        <li><a href="">加拿大<span>+31</span></a></li>
+                        <li><a href="">澳大利亚<span>+201</span></a></li>
+                        <li><a href="">新西兰<span>+890</span></a></li>
+                        <li><a href="">阿尔巴尼亚<span>+10</span></a></li>
+                        <li><a href="">阿根廷<span>+88</span></a></li>
+                        <li><a href="">阿曼<span>+66</span></a></li>
+                        <li><a href="">爱尔兰<span>+204</span></a></li>
+                        <li><a href="">埃及<span>+327</span></a></li>
+                        <li><a href="">爱沙尼亚<span>+007</span></a></li>
+                        <li><a href="">安哥拉<span>+204</span></a></li>
+                        <li><a href="">奥地利<span>+37</span></a></li>
+                        <li><a href="">巴西<span>+204</span></a></li>
+                        <li><a href="">巴拿马<span>+27</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sure-code">
+                <ins>验证</ins>
+                <input type="text" placeholder="请输入验证码" style="font-size: 14px">
+                <input type="button" value="获取验证码">
+                <span></span>
+            </div>
+            <div class="next">
+                下一步
+            </div>
+            <div class="question">
+                <div>&#xe7d6;</div>
+                有问题找小蜜？
+            </div>
+        </div>
+    <!--注册页面表单部分结束-->
+</body>
+</html>
+<script>
+    var inp=document.querySelector('.sure-code [type=text]');
+    var btn=document.querySelector('.sure-code [type=button]');
+    var spa=document.querySelector('.sure-code span');
+    var timer;
+    btn.onclick=function(){
+        //获取0-10之间随机的4个数字
+        var str='';
+        for(var i=0;i<4;i++){
+            str+= parseInt(Math.random()*10);
+        }
+        spa.innerHTML=str;
+
+        //将btn里的值赋值为60秒倒计时
+        var num=60;
+        timer=setInterval(function(){
+            btn.value=num+'s';
+            num--;
+            if(num<0){
+                clearInterval(timer);
+                btn.value="重新获取";
+            }
+        },500);
+
+        //当输入框失去焦点时btn里的值
+        inp.onblur=function(){
+            if(this.value==spa.innerHTML){
+                clearInterval(timer);
+                btn.value='验证成功';
+            }else{
+                clearInterval(timer);
+                btn.value='验证失败';
+            }
+        }
+    }
+</script>
