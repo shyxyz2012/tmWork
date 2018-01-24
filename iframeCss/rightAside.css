@@ -1,0 +1,79 @@
+body,html{
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#aside{
+    width:35px;
+    height: 100%;
+    background: #000000;
+    float: right;
+    position: relative;
+}
+.aside-up{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 100px;
+}
+.aside-up > div{
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin:0 0 15px 0;
+    position: relative;
+}
+.aside-up .up-two,.aside-up .up-one{
+    border-bottom: 1px solid white;
+}
+.aside-up .up-two{
+    width: 35px;
+    height: 120px;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+}
+.aside-up .up-two b{
+    display: block;
+    width: 25px;
+    margin-left: 3px;
+}
+.aside-down{
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    bottom: 0px;
+}
+.aside-down > div{
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin:0 0 15px 0;
+    position: relative;
+}
+.aside-up > div:hover, .aside-down > div:hover{
+    background: red;
+}
+.hidde{
+    width: 90px;
+    height: 30px;
+    background: gray;
+    position: absolute;
+    z-index: 80;
+    left: -90px;
+    top: 0px;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+}
+.aside-up > div:hover .hidde, .aside-down > div:hover .hidde{
+    display: block;
+}

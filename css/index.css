@@ -1025,13 +1025,11 @@
 /*首页底部部分开始*/
 #footer{
     width: 100%;
-    margin: 30px auto;
     overflow: hidden;
     background: #000;
     border-top: 2px solid #FF0B41;
     position: relative;
     bottom: 0;
-    /*overflow: hidden;*/
 }
 #footer p{
     margin: 0 0 20px 100px;
