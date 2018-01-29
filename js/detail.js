@@ -69,41 +69,27 @@ $(function(){
             $(".zoom").css('top','300px');
         }
     });
-    //商城图片放大效果部分结束
 
     //幻灯片部分开始
-    var i=0;
+    var $current_num=0;
+    var $total_num=6;
     var timer;
-    //第一张图片显示，其他隐藏
-    $(".pd-right-pho .ig").eq(0).show().siblings().hide();
-
-    //图片每2秒自动轮播
-    showTimer();
-
-    //当鼠标放在圆点上时，图片可以自动滑动
-    $(".tab").hover(function(){
-        clearInterval(timer);
-        i=$(this).index();
-        show();
-    },function(){
-        showTimer();
-    });
-
-    function showTimer(){
-        timer=setInterval(function(){
-            i++;
-            if(i==8){
-                i=0;
-            }
-            show();
-        },1000);
+    var $width=$(".pd-right-pho").width();
+    function photoSkip(){
+        if($current_num==$total_num){
+            $current_num=0;
+            $(".igs").stop(true,true).animate({left:"0px"},500);
+            $(".tabs li").eq($current_num).addClass("bg").siblings().removeClass("bg");
+        }else{
+            $current_num++;
+            $(".igs").stop(true,true).animate({left:"-="+$width},500);
+            $(".tabs li").eq($current_num).addClass("bg").siblings().removeClass("bg");
+        }
+        timer=window.setTimeout(photoSkip,2000);
+        return;
     }
-
-    function show(){
-        $(".pd-right-pho .ig").eq(i).show().siblings().hide();
-        $(".tabs .tab").eq(i).addClass("bg").siblings().removeClass("bg");
-    }
-    //幻灯片部分结束
+    photoSkip();
+//    幻灯片部分结束
 });
 
 //大家都在买部分点击箭头图片滑动开始
@@ -134,5 +120,4 @@ $(function(){
         }
     });
 })
-
 //大家都在买部分点击箭头图片滑动结束

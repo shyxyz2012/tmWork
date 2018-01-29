@@ -1136,37 +1136,57 @@ body,html{
     display: block;
 }
 .pd-right-pho{
-    width: 100%;
+    width: 760px;
     height: 305px;
-    /*border: 1px solid black;*/
+    position: relative;
+    overflow: hidden;
+}
+.pd-right-pho .igs{
+    width: 700%;
+    height: 305px;
     position: relative;
 }
-.pd-right-pho .igs img{
-    width: 100%;
+.pd-right-pho .igs li{
+    width: 760px;
     height: 305px;
-    position: absolute;
-}
-.pd-right-pho .tabs{
-    position: absolute;
-    width: 240px;
-    height: 60px;
-    right: 0;
-    bottom: 0;
-    cursor: pointer;
-}
-.pd-right-pho .tabs div{
     float: left;
+    list-style: none;
+}
+.pd-right-pho .igs img{
+    width: 760px;
+    height: 305px;
+}
+.tabs{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    z-index: 40;
+    right: 0;
+}
+.tabs ul{
+    width: 260px;
+    height: 25px;
+    position: absolute;
+    right: 30px;
+    bottom: 5px;
+}
+.tabs li{
     width: 25px;
     height: 25px;
     border-radius: 50%;
+    float: left;
     background: #716564;
+    margin-left: 10px;
+    list-style: none;
     text-align: center;
     line-height: 25px;
     color: #ffffff;
-    margin-top: 30px;
-    margin-left: 8px;
+    line-height: 25px;
 }
-.pd-right-pho .tabs .tab.bg{
+.tabs li:hover{
+    background: #B91919;
+}
+.tabs li.bg{
     background: #B91919;
 }
 .bigImg img:nth-child(1){
@@ -1181,7 +1201,6 @@ body,html{
 #many-rated{
     width: 760px;
     height: 160px;
-    /*border: 1px solid darkgray;*/
     margin: 20px 0 0 270px;
 }
 .rated-title{
